@@ -4,6 +4,7 @@ import Hero from './Hero';
 import Info from './Info';
 import Service from './Service';
 import ServiceHero from './ServiceHero';
+import Testimonial from './Testimonial';
 
 
 
@@ -16,6 +17,7 @@ const Home = () => {
             <Service></Service>
             <ServiceHero></ServiceHero>
             <DrAppoinment></DrAppoinment>
+            <Testimonial></Testimonial>
         </div>
     );
 };
