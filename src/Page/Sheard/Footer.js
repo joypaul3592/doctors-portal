@@ -2,7 +2,7 @@ import React from 'react';
 import footerbg from '../../assets/images/footer.png'
 const Footer = () => {
     return (
-        <div className='w-full' style={{ backgroundImage: `url(${footerbg})` }}>
+        <div className='w-full h-fit' style={{ backgroundImage: `url(${footerbg})` }}>
             <footer class="footer p-10 text-black  flex justify-between px-20">
                 <div>
                     <span class="footer-title">Services</span>
