@@ -11,7 +11,7 @@ const Navbar = () => {
         <li><Link to='/login'>Login</Link></li>
     </>
     return (
-        <div className="navbar bg-base-100 flex justify-between px-12">
+        <div className=" max-w-7xl mx-auto navbar bg-base-100 flex justify-between px-12">
             <div className="navbar-start ">
                 <div className="dropdown">
                     <label tabindex="0" className="btn btn-ghost lg:hidden">
