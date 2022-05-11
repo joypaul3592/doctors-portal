@@ -4,7 +4,7 @@ import Button from '../Sheard/Button';
 
 const ServiceHero = () => {
     return (
-        <div className="hero min-h-screen ">
+        <div className="hero min-h-screen px-12">
             <div className="hero-content flex-col lg:flex-row">
                 <img src={treatment} className="max-w-sm w-[270px] md:w-full md:m-16 rounded-lg shadow-2xl" />
                 <div>

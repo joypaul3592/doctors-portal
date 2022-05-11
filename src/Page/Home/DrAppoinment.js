@@ -6,7 +6,7 @@ import Button from '../Sheard/Button';
 
 const DrAppoinment = () => {
     return (
-        <div className=' my-28 w-full' style={{ backgroundImage: `url(${appointment})` }}>
+        <div className=' my-28 px-12 w-full' style={{ backgroundImage: `url(${appointment})` }}>
             <div className=" flex flex-col lg:flex-row items-center">
                 <div className='flex-1'>
                     <img src={doctro} className="mt-[-100px] " />

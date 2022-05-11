@@ -1,9 +1,12 @@
 import React from 'react';
+import Navbar from '../Sheard/Navbar';
+import AppoinmentHero from './AppoinmentHero';
 
 const Appoinment = () => {
     return (
         <div>
-            <h1>This Is Appoinment Page</h1>
+            <Navbar></Navbar>
+            <AppoinmentHero></AppoinmentHero>
         </div>
     );
 };

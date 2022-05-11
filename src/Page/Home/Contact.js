@@ -5,7 +5,7 @@ import Button from '../Sheard/Button';
 
 const Contact = () => {
     return (
-        <div className='py-20 my-28 w-full' style={{ backgroundImage: `url(${appointment})` }}>
+        <div className='py-20 my-28 w-full px-12' style={{ backgroundImage: `url(${appointment})` }}>
             <h4 className='text-center text-primary text-xl font-sans font-bold'>Contact Us</h4>
             <h2 className='text-center text-white font-sans text-4xl '>Stay connected with us</h2>
 

@@ -1,5 +1,6 @@
 import React from 'react';
 import Footer from '../Sheard/Footer';
+import Navbar from '../Sheard/Navbar';
 import Contact from './Contact';
 import DrAppoinment from './DrAppoinment';
 import Hero from './Hero';
@@ -13,7 +14,8 @@ import Testimonial from './Testimonial';
 
 const Home = () => {
     return (
-        <div className=' px-12 '>
+        <div >
+            <Navbar></Navbar>
             <Hero></Hero>
             <Info></Info>
             <Service></Service>

@@ -3,9 +3,9 @@ import heroBanar from '../../assets/images/chair.png'
 import bgimg from '../../assets/images/bg.png'
 import Button from '../Sheard/Button';
 
-const Hero = () => {
+const AppoinmentHero = () => {
     return (
-        <div className="hero min-h-screen w-full px-12" style={{ backgroundImage: `url(${bgimg})` }}>
+        <div className="hero min-h-screen w-full" style={{ backgroundImage: `url(${bgimg})` }}>
             <div className="hero-content flex-col lg:flex-row-reverse">
                 <img className='w-[594px] h-[355px]' src={heroBanar} />
                 <div>
@@ -18,4 +18,4 @@ const Hero = () => {
     );
 };
 
-export default Hero;
+export default AppoinmentHero;

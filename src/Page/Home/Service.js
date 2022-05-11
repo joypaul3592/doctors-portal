@@ -33,7 +33,7 @@ const Service = () => {
     ];
 
     return (
-        <section className='my-16'>
+        <section className='my-16 px-12'>
             <h1 className='text-center font-sans font-bold text-xl text-primary'>OUR SERVICES</h1>
             <p className='text-center text-4xl font-sans mb-10'>Services We Provide</p>
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-5">
