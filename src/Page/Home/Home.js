@@ -1,4 +1,5 @@
 import React from 'react';
+import Footer from '../Sheard/Footer';
 import Contact from './Contact';
 import DrAppoinment from './DrAppoinment';
 import Hero from './Hero';
@@ -20,6 +21,7 @@ const Home = () => {
             <DrAppoinment></DrAppoinment>
             <Testimonial></Testimonial>
             <Contact></Contact>
+            <Footer></Footer>
         </div>
     );
 };

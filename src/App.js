@@ -5,7 +5,6 @@ import Appoinment from './Page/Appoinment/Appoinment';
 import ContactUs from './Page/ContactUs/ContactUs';
 import Home from './Page/Home/Home';
 import Reviews from './Page/Reviews/Reviews';
-import Footer from './Page/Sheard/Footer';
 import Navbar from './Page/Sheard/Navbar';
 
 function App() {
@@ -20,7 +19,6 @@ function App() {
         <Route path="/contactUs" element={<ContactUs />} />
         <Route path="/login" element={<About />} />
       </Routes>
-      <Footer />
     </div>
   );
 }

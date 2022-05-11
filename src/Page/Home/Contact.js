@@ -13,7 +13,7 @@ const Contact = () => {
             <div className='w-1/2 mx-auto my-8'>
                 <input type="email" className='w-full rounded placeholder:text-sm py-1 pl-2 mb-4' placeholder='Enter Your Email' />
                 <input type="text" className='w-full rounded placeholder:text-sm py-1 pl-2 mb-4' placeholder='Subject' />
-                <textarea class="textarea textarea-bordered w-full" placeholder="Your Message"></textarea>
+                <textarea className="textarea textarea-bordered w-full" placeholder="Your Message"></textarea>
                 <div className='flex justify-center mt-6'>
                     <Button >Submit</Button>
                 </div>
