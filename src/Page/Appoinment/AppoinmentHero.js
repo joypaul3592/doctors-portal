@@ -1,17 +1,23 @@
-import React from 'react';
 import heroBanar from '../../assets/images/chair.png'
 import bgimg from '../../assets/images/bg.png'
-import Button from '../Sheard/Button';
+import { DayPicker } from 'react-day-picker';
+import 'react-day-picker/dist/style.css';
 
-const AppoinmentHero = () => {
+const AppoinmentHero = ({ date, setDate }) => {
+
+
+
+
     return (
         <div className="hero min-h-screen w-full" style={{ backgroundImage: `url(${bgimg})` }}>
             <div className="hero-content flex-col lg:flex-row-reverse">
                 <img className='w-[594px] h-[355px]' src={heroBanar} />
-                <div>
-                    <h1 className="text-5xl font-bold">Your New Smile Starts Here</h1>
-                    <p className="py-6">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the</p>
-                    <Button>Get Started</Button>
+                <div className=' lg:mr-12 bg-white rounded-lg shadow-lg' >
+                    <DayPicker
+                        mode="single"
+                        selected={date}
+                        onSelect={setDate}
+                    />
                 </div>
             </div>
         </div>
