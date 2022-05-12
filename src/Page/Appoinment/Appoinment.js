@@ -1,7 +1,7 @@
-import { format } from 'date-fns/esm';
 import React, { useState } from 'react';
 import Navbar from '../Sheard/Navbar';
 import AppoinmentHero from './AppoinmentHero';
+import AvailableAppoinment from './AvailableAppoinment';
 
 const Appoinment = () => {
 
@@ -10,10 +10,11 @@ const Appoinment = () => {
 
     return (
         <div>
+
             <Navbar></Navbar>
             <AppoinmentHero date={date} setDate={setDate}></AppoinmentHero>
+            <AvailableAppoinment date={date} setDate={setDate}></AvailableAppoinment>
 
-            <h1>Selected Date : {format(date, 'PP')}</h1>
         </div>
     );
 };
