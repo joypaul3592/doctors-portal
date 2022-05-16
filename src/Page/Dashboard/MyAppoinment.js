@@ -20,11 +20,6 @@ const MyAppoinment = () => {
 
 
 
-
-
-
-
-
     return (
         <div>
             <h1>My Appoinment {appoinment.length}</h1>
