@@ -6,15 +6,16 @@ import BoockingModal from './BoockingModal';
 const AvailableAppoinment = ({ date }) => {
     const [services, setServices] = useState([]);
     const [treatment, setTreatment] = useState(null)
+    const formattedDate = format(date, 'PP');
 
     useEffect(() => {
-        fetch('http://localhost:5000/services')
+        fetch(`http://localhost:5000/available?date=${formattedDate}`)
             .then(res => res.json())
             .then(data => setServices(data))
 
-    }, [])
+    }, [services, formattedDate])
 
-    console.log(treatment);
+
 
     return (
         <div className='my-10'>
@@ -33,12 +34,6 @@ const AvailableAppoinment = ({ date }) => {
             {
                 treatment && <BoockingModal treatment={treatment} setTreatment={setTreatment} date={date}></BoockingModal>
             }
-
-
-
-
-
-
 
         </div>
     );
