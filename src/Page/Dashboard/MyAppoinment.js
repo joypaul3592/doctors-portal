@@ -1,10 +1,16 @@
+import { signOut } from 'firebase/auth';
 import React, { useEffect, useState } from 'react';
 import { useAuthState } from 'react-firebase-hooks/auth';
+import { useNavigate } from 'react-router-dom';
 import auth from '../../firebase.init';
 
 const MyAppoinment = () => {
     const [appoinment, setAppoinment] = useState([]);
     const [user] = useAuthState(auth)
+    const navigate = useNavigate()
+
+
+
 
 
     useEffect(() => {
@@ -15,7 +21,14 @@ const MyAppoinment = () => {
                     'authorization': `Bearer ${localStorage.getItem('accessToken')}`
                 }
             })
-                .then(res => res.json())
+                .then(res => {
+                    if (res.status === 401 || res.status === 403) {
+                        signOut(auth);
+                        localStorage.removeItem('accessToken')
+                        navigate('/')
+                    }
+                    return res.json()
+                })
                 .then(data => {
                     console.log(data);
                     setAppoinment(data)
