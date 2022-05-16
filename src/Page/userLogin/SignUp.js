@@ -22,15 +22,13 @@ const SignUp = () => {
 
 
 
-    if (token) {
-        navigate(from, { replace: true });
-    }
+    useEffect(() => {
+        if (token) {
+            navigate(from, { replace: true });
+        }
+    }, [token])
 
-    // useEffect(() => {
-    //     if (user || gUser) {
-    //        
-    //     }
-    // }, [user, gUser])
+
 
 
 

@@ -19,14 +19,11 @@ const useToken = user => {
             })
                 .then(res => res.json())
                 .then(data => {
-                    console.log('data inside use Token ', data);
+                    const accesstoken = data.token;
+                    localStorage.setItem('accessToken', accesstoken)
+                    setToken(accesstoken)
                 })
         }
-
-
-
-
-
 
     }, [user])
     return [token]
